@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu Trữ Quyết Định - Phật Quang Quyền</title>
+    <style>
+        :root {
+            --primary-color: #8b0000; 
+            --bg-color: #f4f4f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Nút Accordion chung */
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion.year {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 18px;
+        }
+
+        .accordion.month {
+            background-color: #dcdcdc;
+            margin-left: 20px;
+            width: calc(100% - 20px);
+        }
+
+        .active, .accordion:hover {
+            filter: brightness(0.9);
+        }
+
+        .accordion::after {
+            content: '\002B'; 
+            font-size: 20px;
+            float: right;
+        }
+
+        .active::after {
+            content: "\2212"; 
+        }
+
+        /* Phần nội dung ẩn/hiện */
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none; /* Mặc định ẩn đi */
+            margin-left: 20px;
+            animation: fadein 0.5s;
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Định dạng cho khung chứa bản scan */
+        .doc-item {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .doc-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Định dạng cho ảnh hiển thị */
+        .doc-image {
+            width: 100%; /* Ảnh sẽ tự động co giãn vừa khung */
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            display: block;
+            margin: 0 auto; /* Căn giữa ảnh */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kho Lưu Trữ Quyết Định</h1>
+
+        <button class="accordion year">Năm 2026</button>
+        <div class="panel">
+            
+            <button class="accordion month">Tháng 2 - BỔ NHIỆM NHÂN SỰ BAN TRUYỀN THÔNG MÔN PHÁI PHẬT QUANG QUYỀN</button>
+            <div class="panel">
+                
+                <div class="doc-item">
+                    <p class="doc-title">BỔ NHIỆM NHÂN SỰ BAN TRUYỀN THÔNG MÔN PHÁI PHẬT QUANG QUYỀN</p>
+                    <img src="QĐ bổ nhiệm nhân sự - 1.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="QĐ bổ nhiệm nhân sự - 2.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="QĐ bổ nhiệm nhân sự - 3.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Quy Chế 1.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Quy Chế 2.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Quy Chế 3.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Quy Chế 4.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Quy Chế 5.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Quy Chế 6.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Tờ Trình 1.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Tờ Trình 2.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                    <img src="Tờ Trình 3.jpg" alt="Bổ nhiệm nhân sự Ban Truyền thông" class="doc-image">
+                </div>
+                </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
